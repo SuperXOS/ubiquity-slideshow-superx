@@ -3,48 +3,387 @@
 <html lang="en">
 
 <head>
-	<title>ubiquity-slideshow-ubuntu</title>
-	
-	<link href="link/base.css" rel="stylesheet" type="text/css" />
-	
-	<base target="_blank" />
-	
-	<script type="text/javascript" src="link-core/jquery.js"></script>
-	<script type="text/javascript" src="link-core/jquery.cycle.all.js"></script>
-	
-	<script type="text/javascript" src="link-core/base.js"></script>
-	
-	<script type="text/javascript">
-		SLIDESHOW_OPTIONS = {
-			timeout:50000,
-			speed:600,
-		}
-	</script>
+  <title>ubiquity-slideshow-ubuntu</title>
 
-	<script type="text/javascript" src="link-core/slideshow.js"></script>
+  <link href="link/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="link/base.css" rel="stylesheet" type="text/css" />
+
+  <base target="_blank" />
 </head>
 
 <body>
+  <div id="wrapper">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-wrap="false">
+      <div class="carousel-inner">
+        <!-- welcome slide -->
+        <div class="carousel-item active" data-interval="4000">
 
-<div id="wrapper">
-	<div id="slideshow">
-		<div><a href="welcome.html"></a></div>
-		<div><a href="usc.html"></a></div>
-		<div><a href="music.html"></a></div>
-		<div><a href="photos.html"></a></div>
-		<div><a href="browse.html"></a></div>
-		<div><a href="office.html"></a></div>
-		<div><a href="accessibility.html"></a></div>
-		<div><a href="gethelp.html"></a></div>
-	</div>
+          <div style="width: 100vw; height: 100vh">
 
-	<div id="controls">
-		<a class="control-arrow" id="prev-slide" style="display:none;"></a>
-		<a class="control-arrow" id="next-slide"></a>
-		<input type="hidden" id="current-slide" />
-	</div>
-</div>
+            <div class="header">
+              <h1 class="slidetitle">Welcome to SuperX</h1>
+            </div>
 
+            <div class="main wide">
+              <div class="text">
+                <div>
+                  <p>
+                    Fast and full of new features, the latest version of
+                    SuperX makes computing easier than ever. Here are just a
+                    few cool new things to look out for…
+                  </p>
+                </div>
+              </div>
+
+              <img class="background" src="screenshots/welcome.png" />
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- usc slide -->
+        <div class="carousel-item" data-interval="4000">
+
+          <div style="width: 100vw; height: 100vh">
+
+            <div class="header">
+              <h1 class="slidetitle">Find even more software</h1>
+            </div>
+
+            <div class="main">
+              <div class="text">
+                <div>
+                  <p>
+                    Say goodbye to searching the web for new software. With
+                    access to the SuperX AppStore, you can find and install
+                    new apps with ease. Just type in what you’re looking for,
+                    or explore categories such as Graphics & Photography,
+                    Games and Productivity, alongside helpful reviews from
+                    other users.
+                  </p>
+                </div>
+              </div>
+
+              <img class="screenshot" src="screenshots/gs.png" />
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- music slide -->
+        <div class="carousel-item" data-interval="4000">
+
+          <div style="width: 100vw; height: 100vh">
+
+            <div class="header">
+              <h1 class="slidetitle">Take your music with you</h1>
+            </div>
+            <div class="main">
+              <div class="text">
+                <div>
+                  <p>Ubuntu comes with the amazing Rhythmbox music player. With advanced playback options, it's simple
+                    to queue up the perfect songs. And it works great with CDs and portable music players, so you can
+                    enjoy all your music wherever you go.</p>
+                </div>
+
+                <div class="featured">
+                  <h2 class="subtitle">Included software</h2>
+                  <ul>
+                    <li>
+                      <img class="icon" src="icons/rhythmbox.png" />
+                      <p class="caption">Rhythmbox Music Player</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <img class="screenshot" src="screenshots/music.png" />
+
+            </div>
+
+          </div>
+        </div>
+
+        <!-- photos slide -->
+        <div class="carousel-item" data-interval="4000">
+
+          <div style="width: 100vw; height: 100vh">
+
+            <div class="header">
+              <h1 class="slidetitle">Have fun with your photos</h1>
+            </div>
+
+            <div class="main">
+
+              <div class="text">
+
+                <div>
+                  <p>Shotwell is a handy photo manager that is ready for your gadgets. Connect a camera or a phone to
+                    transfer your photos, then it’s easy to share them and keep them safe. If you’re feeling creative,
+                    you can try lots of photo apps from the Ubuntu Software Center.</p>
+                </div>
+
+                <div class="featured">
+                  <h2 class="subtitle">Included software</h2>
+                  <ul>
+                    <li>
+                      <img class="icon" src="icons/shotwell.png" />
+                      <p class="caption">Shotwell Photo Manager</p>
+                    </li>
+                  </ul>
+                  <h2 class="subtitle">Supported software</h2>
+                  <ul>
+                    <li>
+                      <img class="icon" src="icons/gimp.png" />
+                      <p class="caption">GIMP Image Editor</p>
+                    </li>
+                    <li>
+                      <img class="icon" src="icons/pitivi.png" />
+                      <p class="caption">Pitivi Video Editor</p>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+
+              <img class="screenshot" src="screenshots/photos.png" />
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- browse slide -->
+        <div class="carousel-item" data-interval="4000">
+
+
+          <div style="width: 100vw; height: 100vh">
+
+            <div class="header">
+              <h1 class="slidetitle">Make the most of the web</h1>
+            </div>
+
+            <div class="main">
+
+              <div class="text">
+
+                <div>
+                  <p>Ubuntu includes Firefox, the web browser used by millions of people around the world. And web
+                    applications you use frequently (like Facebook or Gmail, for example) can be pinned to your
+                    desktop for faster access, just like apps on your computer.</p>
+                </div>
+
+                <div class="featured">
+                  <h2 class="subtitle">Included software</h2>
+                  <ul>
+                    <li>
+                      <img class="icon" src="icons/firefox.png" />
+                      <p class="caption">Firefox web browser</p>
+                    </li>
+                  </ul>
+                  <h2 class="subtitle">Supported software</h2>
+                  <ul>
+                    <li>
+                      <img class="icon" src="icons/flash.png" />
+                      <p class="caption">Flash</p>
+                    </li>
+                    <li>
+                      <img class="icon" src="icons/chromium.png" />
+                      <p class="caption">Chromium</p>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+
+              <img class="screenshot" src="screenshots/browse.png" />
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- office slide -->
+        <div class="carousel-item" data-interval="4000">
+
+          <div style="width: 100vw; height: 100vh">
+
+            <div class="header">
+              <h1 class="slidetitle">Everything you need for the office</h1>
+            </div>
+
+            <div class="main">
+
+              <div class="text">
+
+                <div>
+                  <p>LibreOffice is a free office suite packed with everything you need to create documents,
+                    spreadsheets and presentations. Compatible with Microsoft Office file formats, it gives you all
+                    the features you need, without the price tag.</p>
+                </div>
+
+                <div class="featured">
+                  <h2 class="subtitle">Included software</h2>
+                  <ul>
+                    <li>
+                      <img class="icon" src="icons/libreoffice-writer.png" />
+                      <p class="caption">LibreOffice Writer</p>
+                    </li>
+                    <li>
+                      <img class="icon" src="icons/libreoffice-calc.png" />
+                      <p class="caption">LibreOffice Calc</p>
+                    </li>
+                    <li>
+                      <img class="icon" src="icons/libreoffice-impress.png" />
+                      <p class="caption">LibreOffice Impress</p>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+
+              <img class="screenshot" src="screenshots/office.png" />
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- accessibility slide -->
+        <div class="carousel-item" data-interval="4000">
+
+          <div style="width: 100vw; height: 100vh">
+
+            <div class="header">
+              <h1 class="slidetitle">Access for everyone</h1>
+            </div>
+
+            <div class="main">
+
+              <div class="text">
+
+                <div>
+                  <p>At the heart of the Ubuntu philosophy is the belief that computing is for everyone. With advanced
+                    accessibility tools and options to change language, colour scheme and text size, Ubuntu makes
+                    computing easy – whoever and wherever you are.</p>
+                </div>
+
+                <div class="featured">
+                  <h2 class="subtitle">Customization options</h2>
+                  <ul>
+                    <li>
+                      <img class="icon" src="icons/themes.png" />
+                      <p class="caption">Appearance</p>
+                    </li>
+                    <li>
+                      <img class="icon" src="icons/access.png" />
+                      <p class="caption">Assistive technologies</p>
+                    </li>
+                    <li>
+                      <img class="icon" src="icons/languages.png" />
+                      <p class="caption">Language support</p>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+
+              <img class="screenshot" src="screenshots/customize.png" />
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- gethelp slide -->
+        <div class="carousel-item" data-interval="4000">
+
+          <div style="width: 100vw; height: 100vh">
+
+            <div class="header">
+              <h1 class="slidetitle">Help and support</h1>
+            </div>
+
+            <div class="main wide">
+              <div class="text">
+                <div class="font">
+                  <p>
+                    The
+                    <span class="app" data-app="docs">Official documentation</span> covers
+                    many of the most common areas about Ubuntu. It's available both
+                    <a href="https://help.ubuntu.com">online</a> and via the Help icon in
+                    the Dock.
+                  </p>
+                </div>
+
+                <div class="font">
+                  <p>
+                    At <a href="http://askubuntu.com">Ask Ubuntu</a> you can ask questions
+                    and search an impressive collection of already answered questions.
+                    Support in your own language may be provided by your
+                    <a href="http://loco.ubuntu.com/teams/">Local Community Team</a>.
+                  </p>
+                </div>
+
+                <div class="font">
+                  <p>
+                    For pointers to other useful resources, please visit
+                    <a href="https://www.ubuntu.com/support/community-support">Community support</a>
+                    or <a href="http://www.ubuntu.com/support">Commercial support</a>.
+                  </p>
+                </div>
+              </div>
+
+              <img class="background" src="screenshots/welcome.png" />
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <a class="control-arrow carousel-control-prev" id="prev-slide" href="#carouselExampleControls" role="button"
+        data-slide="prev"></a>
+      <a class="carousel-control-next control-arrow" href="#carouselExampleControls" role="button" data-slide="next"
+        id="next-slide">
+      </a>
+    </div>
+  </div>
+
+  <!-- 
+  <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+    integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script> -->
+
+  <script src="link-core/jquery.min.js"></script>
+  <script type="text/javascript" src="link-core/bootstrap.min.js"></script>
+  <script type="text/javascript" src="link-core/popper.min.js"></script>
+
+  <script type="text/javascript" src="link-core/responsive.js"></script>
+
+  <script>
+    $('#prev-slide').hide();
+    $("#carouselExampleControls").on('slid.bs.carousel', function () {
+      var $this;
+      $this = $("#carouselExampleControls");
+      if ($("#carouselExampleControls .carousel-inner .carousel-item:first").hasClass("active")) {
+        $this.children("#prev-slide").hide();
+        $this.children("#next-slide").show();
+      } else if ($("#carouselExampleControls .carousel-inner .carousel-item:last").hasClass("active")) {
+        $this.children("#next-slide").hide();
+        $this.children("#prev-slide").show();
+      } else {
+        $this.children(".carousel-control").show();
+        $this.children("#next-slide").show();
+        $this.children("#prev-slide").show();
+      }
+    })
+  </script>
 </body>
 
 </html>
