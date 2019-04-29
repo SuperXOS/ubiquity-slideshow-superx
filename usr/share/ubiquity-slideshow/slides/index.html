@@ -9,6 +9,12 @@
   <link href="link/base.css" rel="stylesheet" type="text/css" />
 
   <base target="_blank" />
+  <script src="link-core/jquery.min.js"></script>
+  <script>
+    $( document ).ready(function() {
+        updateImageSize();
+    });
+  </script>
 </head>
 
 <body>
@@ -84,7 +90,6 @@
                     </li>
                   </ul>
                 </div>
-
               </div>
 
               <img class="screenshot" src="screenshots/browse.png" />
@@ -108,7 +113,7 @@
                 <div>
                   <p>SuperX comes pre-installed with VLC Media Player, enabling you to play almost all formats without any additional codec installation.</p>
                   <br>
-                  <p>For your music collection, SuperX includes the Musique audio player, a simple and intuitive music player. Kdenlive video editor is also included by default for those your amateur video editing needs.<</p>
+                  <p>For your music collection, SuperX includes the Musique audio player, a simple and intuitive music player. Kdenlive video editor is also included by default for those your amateur video editing needs.</p>
                 </div>
 
                 <div class="featured">
@@ -327,8 +332,7 @@
           </div>
 
         </div>
-
-        
+       
         <!-- security slide -->
         <div class="carousel-item" data-interval="10000">
 
@@ -374,7 +378,6 @@
 
         </div>
         
-
         <!-- help and community slide -->
         <div class="carousel-item" data-interval="10000">
 
@@ -452,6 +455,24 @@
         $this.children("#prev-slide").show();
       }
     })
+    
+    
+    
+    function updateImageSize() {
+    $(".main").each(function(){
+            var ratio_cont = jQuery(this).width()/jQuery(this).height();
+            var $img = jQuery(this).find(".screenshot");
+            var ratio_img = $img.width()/$img.height();
+//             alert($img.attr('src'));
+            
+            $img.css({"width": "60%", "height": "auto"});
+        }); //missing )
+    };
+
+
+    $( window ).resize(function() {
+        updateImageSize();
+        });
   </script>
 </body>
 

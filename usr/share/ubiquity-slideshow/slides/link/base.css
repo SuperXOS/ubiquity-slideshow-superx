@@ -323,6 +323,9 @@ Inner space is 224px wide.
   z-index: 2;
 
 /*  -webkit-box-shadow: #999999 0px 0px 5px;
+=======
+  /*-webkit-box-shadow: #999999 0px 0px 5px;
+>>>>>>> d89a4ebf41b5ab00828045b4cb576fc772790fa2
   -moz-box-shadow: #999999 0px 0px 5px;
   box-shadow: #999999 0px 0px 5px;*/
 }
